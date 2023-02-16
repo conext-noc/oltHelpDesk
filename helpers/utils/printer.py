@@ -25,8 +25,7 @@ color = {
 
 
 def colorFormatter(txt, variant):
-    paint = "normal" if variant == "" else variant
-    return color[paint] + txt + color["end"]
+    return txt
 
 
 def log(value):
