@@ -1,6 +1,7 @@
 table = {
     "condition_summary": "------------------------------------------------------------------------------",
     "condition_port": "-----------------------------------------------------------------------------",
+    "condition_wan":"-----------------------------------------------------------------------------",
     "options_summary": [
         {
             "name": "state",
@@ -20,15 +21,24 @@ table = {
             "name": "state",
             "start": 7,
             "end": 8,
-            "header": ",f,s/p,onu_id,sn,control_flag,run_state,config_state,match_state,protect_side,na",
+            "header": ",f,/s/p,onu_id,sn,control_flag,run_state,config_state,match_state,protect_side,na",
+            "header_1": ",f/s/p,onu_id,sn,control_flag,run_state,config_state,match_state,protect_side,na",
         },
         {
             "name": "names",
             "start": 9,
             "end": 10,
-            "header": ",f,s/p,onu_id,name1,name2,name3,name4,name5,name6,name7,name8,name9,name10,name11,name12,name13,name14,name15,name16,name17,name18,name19,name20,name21",
+            "header": ",f,/s/p,onu_id,name1,name2,name3,name4,name5,name6,name7,name8,name9,name10,name11,name12,name13,name14,name15,name16,name17,name18,name19,name20,name21",
+            "header_1": ",f/s/p,onu_id,name1,name2,name3,name4,name5,name6,name7,name8,name9,name10,name11,name12,name13,name14,name15,name16,name17,name18,name19,name20,name21",
         },
     ],
+    "options_wan":
+        {
+            "start": 13,
+            "end": 14,
+            "header": "spid,vlan,vlan_att,port_type,f/s,/p,onu_id,vci,flow_type,vlan_idx,plan_idx,tx,state,",
+            "header_1": "spid,vlan,vlan_att,port_type,f/s/p,onu_id,vci,flow_type,vlan_idx,plan_idx,tx,state,"
+        }
 }
 
 ports = {
