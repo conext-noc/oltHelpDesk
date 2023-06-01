@@ -110,7 +110,7 @@ def clientsTable(comm, command, lst, olt):
                     )
             for (summ, port, wan) in zip(clientsSummary, clientsPort, valueWanData):
 
-                onu_id_condition = summ["onu_id"] == port["onu_id"] and summ["onu_id"] == wan["onu_id"] if olt == "1" else summ["onu_id"] == port["onu_id"]
+                onu_id_condition = summ["onu_id"] == port["onu_id"] 
                 
                 if onu_id_condition:
                     CLIENTS.append(
