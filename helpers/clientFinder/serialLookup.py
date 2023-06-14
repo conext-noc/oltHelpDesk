@@ -27,7 +27,7 @@ existing = {
 
 def serialSearch(comm, command, data):
     command(f"display ont info by-sn {data['sn']} | no-more")
-    sleep(6)
+    sleep(10)
     val = decoder(comm)
     regex = checkIter(val, existingCond)
     data["fail"] = failChecker(val)
